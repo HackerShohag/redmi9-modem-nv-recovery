@@ -1,0 +1,7 @@
+[gsm.operator.numeric]: [47003,47002]
+[gsm.sim.operator.numeric]: [47003,47002]
+[gsm.sim.state]: [LOADED,LOADED]
+[vendor.mtk.md1.status]: [ready]
+[vendor.ril.md_status_from_ccci]: [ready]
+[vendor.ril.sim.uicc.applications.enable.state]: [0]
+[vendor.ril.sim.uicc.applications.enable.state.2]: [0]
