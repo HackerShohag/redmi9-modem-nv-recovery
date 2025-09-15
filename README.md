@@ -1,6 +1,8 @@
-﻿# Redmi 9 Modem / NV Recovery & Backup Toolkit
+﻿# Redmi 9 (lancelot) Modem / NV Recovery & Backup Toolkit
 
 High‑level repository overview. Detailed operational documentation lives in `toolkit/README.md`.
+
+Device codename: `lancelot` (Redmi 9, MTK Helio G80 platform).
 
 ---
 ## 1. Executive Summary
