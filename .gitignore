@@ -1,0 +1,73 @@
+# Repository: redmi9-modem-nv-toolkit# Ignore raw binary partition images if repository should stay lean.
+
+# Purpose: Ignore generated artifacts, large binary dumps, transient logs.# Comment out lines you want to track.
+
+
+
+# Backup snapshots (retain users choose specific ones manually if needed)backups/*/parts/*.img
+
+backups/modem_nv_*/parts/*.imgbackups/*/parts/*.log
+
+backups/modem_nv_*/parts/*.logbackups/*/nv/*.tar.gz
+
+backups/modem_nv_*/nv/*.tar.gzbackups/*/SHA256SUMS
+
+backups/modem_nv_*/SHA256SUMS
+
+backups/modem_nv_*/manifest.json# Allow manifests & small metadata
+
+backups/modem_nv_*/TAG!backups/*/manifest.json
+
+!backups/*/getprop_focus.txt
+
+# Allow a minimal placeholder backup directory structure!backups/*/getprop_all.txt
+
+!backups/.gitkeep
+
+# Editor / system noise
+
+# Repair session working dirs*.swp
+
+repairs/*.tmp
+
+*~
+
+# Monitoring & orchestrator runtime logs.DS_Store
+
+monlogs/
+orchestrator_logs/
+
+# Temporary diff or analysis outputs
+*.diff
+*.patch
+*.tmp
+*~
+
+# Editor / OS clutter
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python virtual envs (if later added for tooling)
+.venv/
+venv/
+
+# Node modules (future tooling possibility)
+node_modules/
+
+# Core dumps
+core
+core.*
+
+# Archives produced ad-hoc
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Ensure toolkit scripts remain tracked
+!toolkit/*.sh
+!toolkit/README.md
